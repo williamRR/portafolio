@@ -1,22 +1,16 @@
 import React from 'react'
-import { BrowserRouter, Route } from 'react-router-dom'
 import Navigation from './components/Navigation'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import MiddleLayout from './components/MiddleLayout'
+import Footer from './components/Footer'
 
 function App() {
   return (
-    <BrowserRouter>
+    <div className="container p-4">
       <Navigation />
-      <div className="container p-4">
-        <Route path='/form/'>
-          {/* <Form /> */}
-        </Route>
-        <Route exact path='/'>
-          {/* <TravelList /> */}
-        </Route>
-      </div>
-    </BrowserRouter >
-
+      <MiddleLayout />
+      <Footer />
+    </div>
   )
 }
 

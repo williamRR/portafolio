@@ -1,18 +1,30 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import './navigation.css'
 
 const Navigation = () => {
   return (
-    <nav className="navbar navbar-light bg-light">
-      <div className="container">
-        <Link className="navbar-brand mx-auto" to='/'>William Rehel</Link>
-        {/* <ul className="navbar-nav ml-auto">
+    <div className="container">
+      <nav className="navbar navbar-expand-md navbar-light bg-light">
+      <a className="navbar-brand" href="/">
+        William Rehel
+        </a>
+      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span className="navbar-toggler-icon"></span>
+      </button>
+      <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul className="navbar-nav ml-5 ml-auto">
           <li className="nav-item">
-            <Link className="nav-link" to='/form'>Agregar</Link>
+            <a className="nav-link" href="#secondSection">Proyectos</a>
           </li>
-        </ul> */}
+          <li className="nav-item">
+            <a href="#footer" className="nav-link" >
+              Contacto</a>
+          </li>
+        </ul>
       </div>
     </nav>
+    </div>
+
   )
 }
 
