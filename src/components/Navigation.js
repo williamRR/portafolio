@@ -1,5 +1,4 @@
 import React from 'react'
-import './navigation.css'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import Container from 'react-bootstrap/Container'
@@ -8,7 +7,7 @@ const Navigation = () => {
 
   return (
     <Container>     
-      <Navbar bg="light" expand="md">
+      <Navbar stle={{background: "white"}}expand="md">
         <Navbar.Brand href="#home">William Rehel</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

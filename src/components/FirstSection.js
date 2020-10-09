@@ -7,18 +7,26 @@ import Image from 'react-bootstrap/Image'
 import { Jumbotron } from 'react-bootstrap'
 
 const FirstSection = () => {
+
+  const classes = {
+    section: { marginBottom: "45vh"},
+    jumbotron: { background: "white" },
+    image: {width: "50%"}
+  }
+
   return (
-    <Container id="firstSection">
+    <Container id="firstSection" style={classes.section}>
       <Row>
-        <Col xs={12} md={6}>
-          <Image fluid src={logo} />
+        <Col xs={12} md={6} className="text-center">
+          <Image fluid style={classes.image} src={logo} />
         </Col>
         <Col xs={12} md={6}>
-          <Jumbotron style={{background: "white"}}>
-            <p className="text-muted">
-              Bienvenido a mi portafolio, visitante. Utilizaré este sitio para llevar un registro de mis avances como desarrollador y aprovechar de mostrar los proyectos en los que he trabajado, adjunto además una imagen del sitio, una descripción de las tecnologías que utilicé y la url donde está hospedado.
-              Saludos.
+          <Jumbotron style={classes.jumbotron} className="align-center">
+            <span class="align-middle">
+              <p className="text-muted">
+                Bienvenido a mi portafolio.
             </p>
+            </span>
           </Jumbotron>
         </Col>
       </Row>
