@@ -1,21 +1,31 @@
 import React from 'react'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Image from 'react-bootstrap/Image'
+import Col from 'react-bootstrap/Col'
+import { Jumbotron } from 'react-bootstrap'
 
-const Site = ({ site }) => {
+const Site = ({ site, reverse }) => {
+
+  const siteStyle={
+    // height: "75vh"    
+  }
 
   return (
-    <div container className="m-2">
-      <div className="row">
-        <div className="col-md-5 m-1">
-          <img width="100%" className="m-2" src={site.image} href={site.url} alt="site" />
-        </div>
-        <div className="col-1"></div>
-        <div className="col-md-5 m-1">
-          <h3>{site.title}</h3>
-          <h4>{site.description}</h4>
-          <a href={site.url}></a>
-        </div>
-      </div>
-    </div>
+    <Container>
+      <Row className={reverse ? null : "flex-row-reverse"} style={siteStyle}>
+        <Col xs={12} md={6}>
+          <Image fluid src={site.image} />
+        </Col>
+        <Col xs={12} md={6}>
+                  <Jumbotron style={{background: "white"}}>
+          <h1>{site.title}</h1>
+          <p>{site.description}</p>
+          {/* <a href={site.url}></a> */}
+          </Jumbotron>
+        </Col>        
+        </Row>
+    </Container>
   )
 }
 
