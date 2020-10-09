@@ -22,11 +22,9 @@ const FirstSection = () => {
         </Col>
         <Col xs={12} md={6}>
           <Jumbotron style={classes.jumbotron} className="align-center">
-            <span class="align-middle">
               <p className="text-muted">
                 Bienvenido a mi portafolio.
             </p>
-            </span>
           </Jumbotron>
         </Col>
       </Row>
