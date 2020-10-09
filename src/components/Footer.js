@@ -5,10 +5,10 @@ import { faFacebook, faGithub, faTwitter, faGooglePlus, faWhatsapp } from '@fort
 
 const Footer = () => {
 
-  const classes={
+  const classes = {
     icon: {
       margin: "20px",
-    }, 
+    },
     footer: {
       marginTop: "40vh",
       background: "white"
@@ -19,9 +19,9 @@ const Footer = () => {
       <Row>
         <Col className="text-center">
           <p className="display-5">
-          William Alberto Rehel Rifo
+            William Alberto Rehel Rifo
           </p>
-          </Col>
+        </Col>
       </Row>
       <Row>
         <Col className="text-center">
@@ -33,8 +33,6 @@ const Footer = () => {
         </Col>
       </Row>
     </Container>
-
-
   )
 }
 
