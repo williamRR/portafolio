@@ -14,7 +14,7 @@ const SecondSection = () => {
     description: "Sitio desarrollado con React y React-Bootstrap. Hosteado en AWS, sitio serverless."
   },{
     title: "Mobike",
-    url: "https://mobikewr.herokuapp.com/",
+    url: "https://mobikes.herokuapp.com/",
     image: "mobike.png",
     description: "Sitio tipo CRUD desarrollado con Java, MySQL, Spring Security, Thymeleaf, Bootstrap, HTML y CSS. Implementado sistema de registro y login con authorize. Hosteado e Heroku "
   }]
