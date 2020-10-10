@@ -9,7 +9,7 @@ import { Jumbotron } from 'react-bootstrap'
 const FirstSection = () => {
 
   const classes = {
-    section: { marginBottom: "45vh"},
+    section: { marginBottom: "45vh", marginTop: "15vh"},
     jumbotron: { background: "white" },
     image: {width: "50%"}
   }
@@ -21,7 +21,7 @@ const FirstSection = () => {
           <Image fluid style={classes.image} src={logo} />
         </Col>
         <Col xs={12} md={6}>
-          <Jumbotron style={classes.jumbotron} className="align-center">
+          <Jumbotron style={classes.jumbotron} className="align-center text-center">
               <p className="text-muted">
                 Bienvenido a mi portafolio.
             </p>

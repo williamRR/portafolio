@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { faFacebook, faGithub, faTwitter, faGooglePlus, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import Nav from 'react-bootstrap/Nav'
 
 const Footer = () => {
 
@@ -23,14 +24,24 @@ const Footer = () => {
           </p>
         </Col>
       </Row>
-      <Row>
-        <Col className="text-center">
+      <Row className="text-center display-block" style={{ justifyContent: "center" }}>
+        {/* <Col className="text-center"> */}
+        <Nav.Link style={{ color: "black" }} href="https://wa.me/<56930023354>">
           <FontAwesomeIcon style={classes.icon} size="3x" icon={faFacebook} />
+        </Nav.Link>
+        <Nav.Link style={{ color: "black" }} href="https://wa.me/<56930023354>">
           <FontAwesomeIcon style={classes.icon} size="3x" icon={faGooglePlus} />
+        </Nav.Link>
+        <Nav.Link style={{ color: "black" }} href="https://wa.me/<56930023354>">
           <FontAwesomeIcon style={classes.icon} size="3x" icon={faTwitter} />
+        </Nav.Link>
+        <Nav.Link style={{ color: "black" }} href="https://wa.me/<56930023354>">
           <FontAwesomeIcon style={classes.icon} size="3x" icon={faGithub} />
+        </Nav.Link>
+        <Nav.Link style={{ color: "black" }} href="https://wa.me/<56930023354>">
           <FontAwesomeIcon style={classes.icon} size="3x" icon={faWhatsapp} />
-        </Col>
+        </Nav.Link>
+        {/* </Col> */}
       </Row>
     </Container>
   )
