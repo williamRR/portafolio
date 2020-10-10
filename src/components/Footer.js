@@ -17,13 +17,13 @@ const Footer = () => {
   }
   return (
     <Container id="footer" fluid style={classes.footer} className="mb-0 justify-content-center">
-      <Row>
+      {/* <Row>
         <Col className="text-center">
           <p className="display-5">
             William Alberto Rehel Rifo
           </p>
         </Col>
-      </Row>
+      </Row> */}
       <Row className="text-center display-block" style={{ justifyContent: "center" }}>
         {/* <Col className="text-center"> */}
         <Nav.Link style={{ color: "black" }} href="https://www.facebook.com/">
