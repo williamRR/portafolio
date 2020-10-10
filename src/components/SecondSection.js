@@ -16,7 +16,7 @@ const SecondSection = () => {
     title: "Mobike",
     url: "https://mobikes.herokuapp.com/",
     image: "mobike.png",
-    description: "Sitio tipo CRUD desarrollado con Java, MySQL, Spring Security, Thymeleaf, Bootstrap, HTML y CSS. Implementado sistema de registro y login con authorize. Hosteado e Heroku "
+    description: "Sitio tipo CRUD desarrollado con Java, MySQL, Spring Security, Thymeleaf, Bootstrap, HTML y CSS. Implementado sistema de registro y login con authorize. Hosteado en Heroku "
   }]
 
   return (
